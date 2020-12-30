@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Test App",
+    "slug": "testapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.expotestapp.sushil",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.expotestapp.sushil",
+      "versionCode": 1,
+      "useNextNotificationsApi": true,
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_BACKGROUND_LOCATION", "SYSTEM_ALERT_WINDOW"] 
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "notification":{
+      "iosDisplayInForeground": true
+    }
+  }
+}

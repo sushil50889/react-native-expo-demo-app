@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Test App",
+    "slug": "testapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.expotestapp.sushilmandi",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to take the photos of different products",
+        "NSLocationAlwaysUsageDescription": "This app uses the location to know the current position for best user experience",
+        "NSLocationWhenInUseUsageDescription": "This app uses the location to know the current position for best user experience"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAvi8izJBiY5SXocu2gM-UH0cVr6LDpGks"
+        }
+      },
+      "package": "com.expotestapp.sushilmandi",
+      "versionCode": 1,
+      "permissions": ["CAMERA", "INTERNET", "LOCATION", "ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION", "ACCESS_BACKGROUND_LOCATION", "SYSTEM_ALERT_WINDOW"] 
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "notification":{
+      "iosDisplayInForeground": true
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "sushilmandi",
+            "project": "react-native",
+            "authToken": "67b806d3f3f149069ad59fb30bf49543e6b333acda94416fa8e4327a607a1de5"
+          }
+        }
+      ]
+    }
+  }
+}
