@@ -1,9 +1,13 @@
 import { PaymentsStripe as Stripe } from 'expo-payments-stripe';
-Stripe.setOptionsAsync({
+
+if(Stripe.stripeInitialized){
+  Stripe.setOptionsAsync({
     publishableKey: 'pk_test_Dmmc5tX4ZDWYdjKZX8SB5cSn', // Your key
     // androidPayMode: 'test',
     // merchantId: 'your_merchant_id',
-});
+  });
+}
+
 
 // const theme = {
 //       primaryBackgroundColor: 
